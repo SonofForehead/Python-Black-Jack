@@ -1,4 +1,10 @@
+import random
 from random import shuffle
 
-cards = {"Ace": 11, "Two": 2, "Three": 3, "Four": 4, "Five": 5, "Six": 6, "Seven": 7, "Eight": 8, "Nine": 9, "Queen": 10,  "Jack": 11, "King": 12}
+cards = {"A": 11, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "Q": 10,  "J": 11, "K": 12}
 category = ["♣️", "♦️", "♥️", "♠️"]
+
+money_bet = int(input("How much do you want to bet?: \n"))
+
+print("Dealers Hand: ", random.choice(category), random.choice(list(cards)))
+
